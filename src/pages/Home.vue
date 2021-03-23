@@ -3,7 +3,7 @@
     <div class="logo">
     <img alt="Vue logo" src="../assets/logo.png">
   </div>
-   <InfoSection/>
+   <InfoSection @initialized="handler"/>
   </div>
 </template>
 
@@ -15,6 +15,11 @@ export default {
   name: 'Home',
   components: {
    InfoSection
+  },
+  methods: {
+      handler(){
+      console.log("Section Info 1 initiliazed");
+   },
   }
 }
 </script>
