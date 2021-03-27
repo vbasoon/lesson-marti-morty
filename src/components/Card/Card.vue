@@ -5,15 +5,21 @@
 </template>
 
 <script>
-export default {
-   name: "Card",
-   data() {
-      return {
-       
-      }
-   },
- 
-}
+   import advData from '@/db.json'
+   console.log(advData);
+   
+   export default {
+      name: "Card",
+      props: {
+         msg: String
+      },
+      data() {
+         return {
+            advData
+         }
+      },
+   
+   }
 </script>
 
 <style>
